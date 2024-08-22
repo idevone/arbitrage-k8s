@@ -1,0 +1,14 @@
+services:
+  as-auth-service-api:
+    build:
+      context: ./as-auth-service-api
+      dockerfile: Dockerfile
+    container_name: auth-api
+    restart: always
+
+  as-tg-service-api:
+    build:
+      context: ./as-tg-service-api
+      dockerfile: Dockerfile
+    container_name: tg-api
+    restart: always
